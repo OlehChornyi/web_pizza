@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    border: 0.1rem solid #130f40;
+    border-radius: 0.5rem;
+    background: none;
+    color: #130f40;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #130f40;
+    color: #fff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.header .logo i{
+    color: #ff7800;
+    padding-right: 0.5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #130f40;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: #ff7800;
+}
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: #130f40;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: #ff7800;
+}
+
+#menu{
+    display: none;
+}
+
+.header .shopping-cart{
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    padding: 2rem;
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.header .shopping-cart .box .fa-times{
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.header .shopping-cart .box .fa-times:hover{
+    color: #ff7800;
+}
+
+.header.shopping-cart .box img{
+    height: 10rem;
+}
+
+.header .shopping-cart .box .content h3{
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+    color: #130f40;
+}
+
+.header .shopping-cart .box .content span{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.header .shopping-cart .box .content span.multiply{
+    margin: 0 0.5rem;
+}
+
+.header .shopping-cart .total{
+    color: #130f40;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.header .shopping-cart .btn{
+    text-align: center;
+    width: 100%;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    padding: 2rem;
+}
+
+.header .login-form.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .login-form h3{
+    color: #130f40;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+.header .login-form .box{
+    margin: 0.7rem 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: #130f40;
+    text-transform: none;
+    width: 100%;
+}
+
+.header .login-form .remember{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.7rem 0;
+}
+
+.header .login-form .remember label{
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.header .login-form .btn{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .slide .content{
+    width: 60rem;
+    text-align: center;
+    display: none;
+}
+
+.home .slide .content h3{
+    font-size: 6rem;
+    color: #fff;
+    line-height: 1.3;
+    padding: 2rem 0;
+    animation: sliderReveal 1s ease forwards;
+}
+
+.home .slide .content h3 span{
+    color: #ff7800;
+}
+
+.home .slide .content .btn{
+    background: #130f40;
+    color: #fff;
+    animation: sliderReveal 1s ease forwards;
+}
+
+.home .swiper-slide-active .content{
+    display: inline-block;
+}
+
+.home .swiper-slide-active{
+    animation: smoothScale 4s linear forwards;
+}
+
+@keyframes sliderReveal{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes smoothScale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.15);
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    margin-left: 1.5rem;
+    transform: translateY(-50%) rotate(45deg);
+    border: 0.1rem solid #ff7800;
+    color: #ff7800;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 1.5rem;
+    transform: rotate(-45deg);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    background: #ff7800;
+    color: #fff;
+}
+
+/* 27.31 */
