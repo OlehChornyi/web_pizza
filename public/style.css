@@ -370,3 +370,59 @@ section{
     color: #130f40;
     padding: 1rem;
 }
+
+.pizzas .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.pizzas .box-container .box{
+    padding: 0 2.5rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pizzas .box-container .box img{
+    height: 29rem;
+}
+
+.pizzas .box-container .box:hover img{
+    transform: scale(1.1);
+}
+
+.pizzas .box-container .box h3{
+    font-size: 2.5rem;
+    color: #130f40;
+    line-height: 1.8;
+}
+
+.pizzas .box-container .box p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.pizzas .box-container .box .stars{
+    padding: 1rem 0;
+}
+
+.pizzas .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.pizzas .box-container .box .price{
+    color: #130f40;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+
+.pizzas .box-container .box .price span{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #ff7800;
+    text-decoration: line-through;
+}
+
