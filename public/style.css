@@ -660,6 +660,48 @@ section{
     color: #ff7800;
 }
 
+.gallery .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.gallery .gallery-container .box{
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .gallery-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .gallery-container .box .icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery .gallery-container .box .icon i{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.gallery .gallery-container .box:hover .icon{
+    display: flex;
+}
+
+
+
 
 
 
