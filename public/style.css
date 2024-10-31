@@ -700,6 +700,92 @@ section{
     display: flex;
 }
 
+.contact .icon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.contact .icon-container .icons{
+    text-align: center;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: o 0.5rem 2.4rem rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.contact .icon-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    background: #eee;
+    color: #ff7800;
+    border-radius: 50%;
+}
+
+.contact .icon-container .icons:hover i{
+    background: #ff7800;
+    color: #fff;
+}
+
+.contact .icon-container .icons h3{
+    color: #130f40;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.contact .icon-container .icons p{
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.contact .row{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact .row form{
+    padding: 2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.6rem 2.4rem rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+}
+
+.contact .row form h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: #130f40;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input{
+    width: 49%;
+}
+
+.contact .row form .inputBox .box,
+.contact .row form textarea{
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    color: #130f40;
+    margin: 0.7rem 0;
+    text-transform: none;
+}
+.contact .row form textarea{
+    width: 100%;
+    height: 15rem;
+    resize: none;
+}
+
+
+
 
 
 
