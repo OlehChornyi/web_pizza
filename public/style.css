@@ -592,6 +592,74 @@ section{
     transform: scale(0.9);
 }
 
+.menu-preview-container{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-preview-container .menu-preview{
+    text-align: center;
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    display: none;
+    width: 35rem;
+}
+
+.menu-preview-container .menu-preview.active{
+    display: inline-block;
+}
+
+.menu-preview-container .menu-preview h3{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #130f40;
+}
+
+.menu-preview-container .menu-preview .stars{
+    margin-top: 0.5rem;
+}
+
+.menu-preview-container .menu-preview .stars i{
+    font-size: 1.7rem;
+    color: #ff7800;
+}
+
+.menu-preview-container .menu-preview p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.menu-preview-container .menu-preview .price{
+    font-size: 2.5rem;
+    color: #130f40;
+    margin-bottom: 0.5rem;
+}
+
+#close{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 6rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+#close:hover{
+    transform: rotate(90deg);
+    color: #ff7800;
+}
+
 
 
 
