@@ -30,3 +30,15 @@ var swiper = new Swiper(".home-slider", {
         prevEl: '.swiper-button-prev',
     },
 });
+
+var swiper = new Swiper(".menu-slider", {
+    grabCursor: true,
+    loop: true,
+    autoHeight: true,
+    centeredSlides: true,
+    spaceBetween: 20,
+    pagination:{
+        el: '.swiper-pagination',
+        clickable: true,
+    }
+});

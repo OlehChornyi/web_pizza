@@ -543,6 +543,55 @@ section{
     color: #666;
 }
 
+.menu .slide .title{
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    background: #ff7800;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.menu .slide .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.menu .slide .box-container .box{
+    flex: 1 1 38rem;
+    background: #eee;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu .slide .box-container .box h3{
+    font-size: 2.2rem;
+    color: #130f40;
+    padding-bottom: 0.5rem;
+}
+
+.menu .slide .box-container .box p{
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+}
+
+.menu .slide .box-container .box .price{
+    font-size: 2.2rem;
+    color: #ff7800;
+}
+
+.menu .slide .box-container .box:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
 
 
 
