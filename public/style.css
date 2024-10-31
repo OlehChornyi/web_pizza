@@ -784,16 +784,7 @@ section{
     resize: none;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* footer */
 
 .footer{
     background: #eee;
@@ -866,5 +857,60 @@ section{
 
 .footer .credit span{
     color: #ff7800;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 3rem;
+    }
+}
+
+@media(max-width:768px){
+    .header .icons #menu{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: 0.4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content h3{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .home .slide .content h3{
+        font-size: 3.5rem;
+    }
 }
 

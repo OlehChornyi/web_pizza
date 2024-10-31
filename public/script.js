@@ -12,9 +12,19 @@ document.querySelector('#login').onclick = () => {
     cart.classList.remove('active');
 };
 
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu').onclick = () => {
+    navbar.classList.toggle('active');
+    login.classList.remove('active');
+    cart.classList.remove('active');
+}
+
 window.onscroll = () => {
     login.classList.remove('active');
     cart.classList.remove('active');
+    navbar.classList.remove('active');
+
 }
 
 var swiper = new Swiper(".home-slider", {
